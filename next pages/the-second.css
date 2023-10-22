@@ -1,0 +1,17 @@
+body {
+  background-color: red;
+}
+
+div.my-whole-grid {
+  width: 60%;
+  background-color: khaki;
+  border: 1px solid black;
+}
+div.my-whole-grid .my-row {
+  background-color: greenyellow;
+  border: 1px solid black;
+  text-align: center;
+}
+div.my-whole-grid .my-row .my-grid {
+  border: 1px solid black;
+}/*# sourceMappingURL=the-second.css.map */

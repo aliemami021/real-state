@@ -1,0 +1,26 @@
+$corporate-red:#ff0000;
+
+
+
+
+
+#even{
+    direction: rtl;
+    transition: 1s;
+    p{
+        text-align: end;
+        direction: ltr;
+    }
+    button{
+    
+    border-radius: 10px 10px 0 10px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    }
+}
+#hover{
+    transition: 1s;
+    
+   
+}

@@ -1,0 +1,29 @@
+@mixin centering-via-positions($my-point:50%) {
+    position: absolute;
+    top: $my-point;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin perfect-centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin invitation-object-class($height-size:20px) {
+    width: 150px;
+    height: $height-size;
+    background-color: $corporate-red;
+    position: relative;
+    border-radius: 50px 50px;
+}
+@mixin aside-botton {
+    width: 200px;
+    height: 35px;
+    background-color: black;
+    color: black;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.517),
+    1px 1px 10px inset rgba(0, 0, 0, 0.130);
+
+}

@@ -1,0 +1,650 @@
+#even {
+  direction: rtl;
+  transition: 1s;
+}
+#even p {
+  text-align: end;
+  direction: ltr;
+}
+#even button {
+  border-radius: 10px 10px 0 10px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+#hover {
+  transition: 1s;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+  color: inherit;
+}
+
+header {
+  height: 80vh;
+  background-color: #262626;
+  width: 100%;
+}
+header .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+}
+header .banner div.top-menu {
+  position: absolute;
+  top: 0;
+  background-color: #262626;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+header .banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header .banner .banner-des {
+  font-family: nunito;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2%;
+  width: 260px;
+  height: 140px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: default;
+}
+header .banner .banner-des p {
+  color: white;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+}
+header .banner .banner-des p#capital {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+header .banner .banner-des p#butt {
+  border: 0.1px solid whitesmoke;
+  padding: 0 10px;
+}
+
+.my-nav {
+  margin-top: 40px;
+  direction: rtl;
+  transform: translateX(-50px);
+}
+.my-nav .custom-me {
+  color: black;
+}
+.my-nav .custom-me a {
+  color: inherit !important;
+}
+.my-nav .custom-me a:hover {
+  color: inherit !important;
+}
+.my-nav li ul {
+  list-style: none;
+  transform: scale(0);
+}
+.my-nav li ul li {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+aside .aside {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+aside .aside .image {
+  width: 45%;
+  overflow: hidden;
+}
+aside .aside .image img {
+  width: 100%;
+  margin: auto;
+  height: 360px;
+  display: block;
+}
+aside .aside .aside-des {
+  font-family: nunito;
+  width: 45%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+aside .aside .aside-des .top-info {
+  flex: 2;
+  cursor: default;
+}
+aside .aside .aside-des .top-info div.invitation-obj {
+  width: 150px;
+  height: 25px;
+  background-color: #ff0000;
+  position: relative;
+  border-radius: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .aside .aside-des .top-info div.invitation-obj .invitation-sbj {
+  font-size: 19px;
+}
+aside .aside .aside-des .top-info .info-top-head {
+  cursor: default;
+}
+aside .aside .aside-des .top-info .info-top-head h3 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+aside .aside .aside-des .top-info .info-top-head h4 {
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+aside .aside .aside-des .top-info .info-top-head p {
+  font-family: b-1;
+}
+aside .aside .aside-des .more-info {
+  flex: 4;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  margin-top: 2px;
+}
+aside .aside .aside-des .more-info P {
+  font-size: 14px;
+  margin: 20px 0;
+  display: block;
+  margin-top: 20px;
+  font-weight: 300;
+  font-family: b-1;
+}
+aside .aside .aside-des .info-footer {
+  flex: 3;
+  position: relative;
+  z-index: 999;
+}
+aside .aside .aside-des .info-footer button {
+  width: 200px;
+  height: 35px;
+  background-color: black;
+  color: black;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.517), 1px 1px 10px inset rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-bottom: 0px !important;
+  border-radius: 10px 10px 10px 0;
+  background-color: white;
+  font-weight: 800;
+  border-color: black;
+  transition: 0.2s;
+}
+aside .aside .aside-des .info-footer button a {
+  color: inherit;
+  padding: 3px 0;
+  font-family: b-2;
+}
+aside .aside .aside-des .info-footer button:hover {
+  transform: translateY(2px);
+  transition: 0.1s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.724);
+}
+aside .aside .aside-des .info-footer button:hover a {
+  transition: 0.09s;
+}
+aside .aside .aside-des .info-footer button div.des-on-hover {
+  width: 455px;
+  height: 200px;
+  transform: translate(600px, -255px);
+  border: 0.7px solid black;
+  border-radius: 50px 50px 50px 0px;
+  box-shadow: 2px 2px 25px 0.9px black;
+  padding: 30px;
+  background-color: white;
+  z-index: -99;
+}
+aside .aside .aside-des .info-footer button div.des-on-hover > span {
+  text-align: center;
+}
+aside .aside .aside-des .info-footer button div.des-on-hover span.title {
+  font-size: 15px;
+  color: #ff0000;
+  font-family: b-3;
+}
+aside .aside .aside-des .info-footer button div.des-on-hover h2 {
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523);
+}
+aside .aside .aside-des .info-footer button #hover p {
+  text-align: start;
+  font-family: b-1;
+}
+aside .aside .aside-des .info-footer button #even {
+  border-radius: 50px 50px 0px 50px;
+  transition: 1s;
+  transform: translate(-600px, -255px);
+}
+aside .aside .aside-des .info-footer button:hover div.des-on-hover {
+  z-index: -100;
+  transform: translate(70px, -255px);
+}
+aside .aside .aside-des .info-footer button:hover #even {
+  z-index: -100;
+  transform: translate(-70px, -255px);
+}
+
+section.rent-or h5 {
+  display: block;
+  font-size: 35px;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-weight: 800;
+  margin: 0 0 40px;
+  cursor: default;
+  font-family: b-2;
+}
+section.rent-or div.cards {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: nunito;
+}
+section.rent-or div.cards .card {
+  width: 30%;
+  border: 2px solid black;
+  position: relative;
+  font-family: b-2;
+}
+section.rent-or div.cards .card:hover span {
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  cursor: default;
+}
+section.rent-or div.cards .card:hover button {
+  background-color: #ff0000;
+  color: white;
+  border: 0.5px solid #ff0000;
+  cursor: pointer;
+  cursor: pointer;
+}
+section.rent-or div.cards .card:hover i.fill {
+  color: #ff0000;
+  display: block;
+}
+section.rent-or div.cards .card:hover p {
+  cursor: default;
+}
+section.rent-or div.cards .card .image {
+  height: 65%;
+  overflow: hidden;
+  position: relative;
+}
+section.rent-or div.cards .card .image img {
+  width: 100%;
+  display: block;
+}
+section.rent-or div.cards .card .image i {
+  color: rgba(192, 17, 17, 0.582);
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  font-size: 40px;
+  transition: 0.3s;
+}
+section.rent-or div.cards .card .image i .null {
+  display: block;
+}
+section.rent-or div.cards .card .image i .fill {
+  display: hidden;
+}
+section.rent-or div.cards .card .image i:hover {
+  color: #ff0000;
+  transform: translate(-1%, -1%) scale(1.1);
+}
+section.rent-or div.cards .card .image:hover i.fill {
+  color: #ff0000;
+  display: block;
+}
+section.rent-or div.cards .card .card-des {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 35%;
+}
+section.rent-or div.cards .card .card-des span {
+  text-align: center;
+  transition: 0.3s;
+}
+section.rent-or div.cards .card .card-des span#green {
+  background-color: lightblue;
+  width: 70px;
+  border-radius: 10px;
+  font-weight: 0;
+}
+section.rent-or div.cards .card .card-des p {
+  text-align: start;
+  margin: 0 10px;
+}
+section.rent-or div.cards .card .card-des button {
+  border: 0.2px solid rgba(0, 0, 0, 0.253);
+  background-color: rgba(255, 0, 0, 0.158);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 25px;
+  border-radius: 5px;
+  transition: 0.4s;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+section.rent-or div.cards .card .card-des button a {
+  transition: 0.3s;
+}
+section.rent-or div.cards .card .card-des button:hover a {
+  letter-spacing: 0.6px;
+}
+section.rent-or div.cards .card:hover span {
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  cursor: default;
+  font-weight: 200;
+}
+section.rent-or div.cards .card:hover button {
+  background-color: #ff0000;
+  color: white;
+  border: 0.2px solid #ff0000;
+  cursor: pointer;
+  cursor: pointer;
+}
+section.rent-or div.cards .card:hover p {
+  cursor: default;
+}
+
+section.animation {
+  margin: 50px auto;
+  border: 0.5px solid black;
+  border-radius: 20px;
+}
+section.animation div.undrestanding {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+}
+section.animation div.undrestanding .my-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  transform: translateY(-20px);
+}
+section.animation div.undrestanding .my-card .details .flex-rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 45%;
+}
+section.animation div.undrestanding .my-form {
+  width: 50% !important;
+  padding-bottom: 30px;
+}
+section.animation div.undrestanding .my-form .mobile {
+  display: flex;
+}
+section.animation div.undrestanding .my-form div a {
+  color: inherit;
+}
+section.animation div.undrestanding .my-form .checkbox01 {
+  padding-left: 10px;
+}
+
+footer .image {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+footer .image img {
+  width: 100%;
+  height: 1200px;
+  display: block;
+}
+footer .image .mask {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.795));
+}
+footer #different {
+  width: 40%;
+  height: 400px;
+}
+footer .footer-details {
+  font-family: nunito;
+  height: auto;
+  position: relative;
+}
+footer .footer-details .on-image {
+  position: absolute;
+  left: 5%;
+  cursor: pointer;
+  transform: translateY(-200px);
+  width: auto;
+  height: 70px;
+  background-color: rgb(235, 51, 51);
+  color: white;
+  border-radius: 15px 15px 15px 0px;
+  padding: 10px;
+  box-shadow: inset 3px 2px 10px rgba(0, 0, 0, 0.403), 3px 3px 45px rgba(0, 0, 0, 0.263);
+  transition: 0.5s;
+  font-family: b-2;
+}
+footer .footer-details .on-image h5 {
+  font-size: 16px;
+  font-weight: 800;
+  transition: 0.4s;
+  text-shadow: 2px 2px 2px black;
+  font-family: b-4;
+}
+footer .footer-details .on-image h5:hover {
+  text-shadow: none;
+}
+footer .footer-details .on-image span {
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.5s;
+  text-shadow: 2px 2px 2px black, 3px 2px 20px whitesmoke;
+  font-family: b-2;
+}
+footer .footer-details .on-image span:hover {
+  border-radius: 15px 15px 15px 15px;
+  text-shadow: none;
+}
+footer .footer-details .on-image:hover span {
+  box-shadow: none;
+}
+footer .footer-details .footer-about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer-details .footer-about .about {
+  width: 15%;
+}
+footer .footer-details .footer-about .about a {
+  display: flex;
+  transition: 0.1s;
+  color: inherit;
+}
+footer .footer-details .footer-about .about a:hover {
+  color: #ff0000 !important;
+  transform: scale(1.05);
+}
+footer .footer-details .footer-about .about a span {
+  line-height: 20px;
+}
+footer .footer-details .footer-about .about h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  cursor: default;
+  transition: 0.1s;
+  font-family: b-2;
+}
+footer .footer-details .footer-about .about h2:hover {
+  color: #ff0000;
+  transform: scale(1.03);
+}
+footer .footer-details .mobile-store {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+footer .footer-details .mobile-store div.store-btn {
+  width: 120px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px 20px 20px 2px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.321), 5px 5px 25px inset rgba(0, 0, 0, 0.33), 2px 2px 35px rgba(0, 0, 0, 0.168), inset 4px 3px 3px rgba(0, 0, 0, 0.105);
+}
+footer .footer-details .mobile-store div.store-btn span {
+  text-align: center;
+  color: white;
+}
+footer .footer-details .mobile-store div.store-btn i {
+  color: red;
+  font-size: 50px;
+}
+footer .footer-details .mobile-store div.store-btn #app-store {
+  color: white;
+  border-radius: 50%;
+}
+footer .footer-details .mobile-store div.store-btn #app-store span {
+  color: white;
+}
+footer .footer-details .mobile-store div.store-btn #google-play {
+  color: seagreen;
+}
+footer .footer-details .mobile-store #app-store-box {
+  background-image: linear-gradient(to top, dodgerblue, dodgerblue, powderblue);
+  transition: 0.4s;
+}
+footer .footer-details .mobile-store #app-store-box:hover {
+  transform: translateX(4px);
+}
+footer .footer-details .mobile-store #google-play-box {
+  border: 1px solid rgb(70, 67, 67);
+  background-color: rgb(56, 55, 55);
+  transition: 0.4s;
+}
+footer .footer-details .mobile-store #google-play-box:hover {
+  transform: translateX(4px);
+}
+footer .footer-details .mention {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+footer .footer-details .mention a {
+  margin: 0 20px;
+}
+footer .footer-details .mention a .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 1200;
+  transition: 0.6s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.253), inset 1px 1px 5px rgba(0, 0, 0, 0.459), 2px 1px 6px rgba(0, 0, 0, 0.105), 2px 2px 5px inset rgba(255, 245, 238, 0.672);
+}
+footer .footer-details .mention a .circle i {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+footer .footer-details .mention a .circle #insta {
+  background-image: radial-gradient(circle at top, rgb(226, 7, 255), rgb(238, 58, 58), rgba(221, 235, 30, 0.205));
+  color: white;
+}
+footer .footer-details .mention a .circle #twit {
+  color: rgb(102, 102, 226);
+}
+footer .footer-details .mention a .circle #tele {
+  color: rgb(92, 92, 221);
+}
+footer .footer-details .mention a .circle #ytube {
+  color: rgb(248, 15, 15);
+  background-color: white;
+}
+footer .footer-details .mention a .circle #wapp {
+  color: rgb(255, 255, 255);
+}
+footer .footer-details .mention a .circle #wapp:hover {
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.138);
+}
+footer .footer-details .mention a .insta {
+  background-image: radial-gradient(circle at top, rgb(226, 7, 255), rgb(238, 58, 58), rgba(221, 235, 30, 0.205));
+}
+footer .footer-details .mention a .twit {
+  background-image: linear-gradient(45deg, rgb(102, 102, 226), white, rgb(102, 102, 226));
+}
+footer .footer-details .mention a .tele {
+  background-color: white;
+  border: 2px solid rgb(150, 150, 228);
+}
+footer .footer-details .mention a .ytube {
+  background-color: white;
+  border: 2px solid rgb(248, 15, 15);
+}
+footer .footer-details .mention a .wapp {
+  background-color: rgb(77, 160, 28);
+}
+footer .footer-details .mention a .circle:hover {
+  border-radius: 25%;
+  box-shadow: inset 5px 5px 10px rgba(255, 245, 238, 0.429), 1px 1px 4px inset rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=main.css.map */
